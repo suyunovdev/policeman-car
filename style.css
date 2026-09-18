@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  background-image: url("./night.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+.box {
+  width: 131px;
+  animation-name: lyuboy;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  position: absolute;
+}
+.car {
+  margin-top: 350px;
+  position: relative;
+  animation-name: moshin;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.cars {
+  width: 1000px;
+}
+.box1 {
+  top: 288px;
+  left: 185px;
+}
+.box2 {
+  right: 181px;
+  top: 288px;
+}
+
+.lamp {
+  background: red;
+  width: 20px;
+  height: 30px;
+  border-radius: 10px 10px 0px 0px;
+  position: absolute;
+  right: 117px;
+  top: 207px;
+  animation-name: lamp;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+}
+.light {
+  position: absolute;
+  top: 236px;
+  left: -187px;
+}
+
+@keyframes lyuboy {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes moshin {
+  from {
+    transform: translate(1400px);
+  }
+  to {
+    transform: translate(-900px);
+  }
+}
+
+@keyframes lamp {
+  0% {
+    background: red;
+  }
+  100% {
+    background: blue;
+  }
+}
